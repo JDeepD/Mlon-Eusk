@@ -13,7 +13,6 @@
 ##### Disclaimer : This is not a tutorial to make a discord bot but rather a guide to customise `Mlon Eusk` according to your needs
 
 
-
 ##### Prerequisites :
 
 ```
@@ -31,3 +30,8 @@
 3. Authenticating with the Reddit API.
 4. Making requests to the API
 5. A few more useful APIs can be found [here](https://github.com/public-apis/public-apis)
+
+
+##### Special Thanks to [@Mastermind-sap](https://github.com/Mastermind-sap) and [@adnanhasan251](https://github.com/adnanhasan251).
+
+
