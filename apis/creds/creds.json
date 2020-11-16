@@ -1,0 +1,14 @@
+{
+				"reddit" : {
+								"client_id" : "Your id",
+								"client_secret" : "Your secret",
+								"user_agent" : "Anything",
+								"password" : "Your reddit pass",
+								"username" : "Your reddit pass",
+								"redirect_uri" : "Put your github prof link or anything"},
+									 
+				"nasaapi" : {"api_key":"Put your api key",
+								     "demo_api_key" : "DEMO_KEY"
+								    }
+								  				
+}
