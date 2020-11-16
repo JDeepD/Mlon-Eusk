@@ -60,12 +60,6 @@ async def linuxmemes(ctx, subreddit="linuxmemes"):
 
 
 @bot.command(pass_context=True)
-async def dbs(ctx, sid="S6019"):
-    url = f"https://www.dbsgcampuscare.in/StudentPhoto/{sid}.jpg?varDate=?varDate=Tue%20Aug%2025%202020%2015:16:12%20GMT+0530%20(India%20Standard%20Time)&TypeID=ImgPath%22"
-    await ctx.send(url)
-
-
-@bot.command(pass_context=True)
 async def spacex(ctx):
     data = spacexapi.latest()
     title = data["details"]

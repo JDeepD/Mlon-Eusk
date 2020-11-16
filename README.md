@@ -30,5 +30,4 @@
 2. Install the packages in `requirements.txt` (Recommended : Use a Virtual environment)
 3. Authenticating with the Reddit API.
 4. Making requests to the API
-5. A few more useful APIs.
-6. Hosting the bot online.
+5. A few more useful APIs can be found [here](https://github.com/public-apis/public-apis)
