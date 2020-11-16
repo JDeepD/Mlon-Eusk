@@ -33,5 +33,5 @@
 
 
 ##### Special Thanks to [@Mastermind-sap](https://github.com/Mastermind-sap) and [@adnanhasan251](https://github.com/adnanhasan251).
-
+Check out [@Mastermind-sap's](https://github.com/Mastermind-sap) discord bot [here](https://github.com/Mastermind-sap/discord-bot)
 
