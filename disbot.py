@@ -1,13 +1,24 @@
-import discord  # pylint: disable=import-error
-from discord import Game  # pylint: disable=import-error
+import discord  # pylint: disable=all
+from discord import Game  # noqa pylint: disable=all
 from discord.ext import commands  # pylint: disable=import-error
 import requests
 import apis.redditapi as redditapi
 import apis.spacexapi as spacexapi
 import apis.nasaapi as nasaapi
+import apis.giphyapi as gifapi
 
 
 bot = commands.Bot(command_prefix='-')  # define command decorator
+
+
+@bot.event
+async def on_message(message, user: discord.Member = None):
+    if message.content == "lol":
+        if user is None:
+            await message.channel.send(str(message.author.mention) + " :rofl:" + " NOICE")  # noqa
+        else:
+            await message.channel.send(str(user.mention) + " :rofl:" + " NOICE")  # noqa
+    await bot.process_commands(message)
 
 
 @bot.command(pass_context=True)
@@ -77,4 +88,10 @@ async def apod(ctx):
     await ctx.send(url)
 
 
-bot.run("<Your token>")
+@bot.command(pass_context=True)
+async def getgif(ctx, *, query):
+    url = gifapi.getgif(query)
+    await ctx.send(url)
+
+
+bot.run("NzY4Mzk2MjgxMDQyMTczOTcz.X4_2zQ.OXqv_Mls_731OIu3SyAwci7THe4")
