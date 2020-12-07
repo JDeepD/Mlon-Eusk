@@ -13,12 +13,19 @@ bot = commands.Bot(command_prefix='-')  # define command decorator
 
 @bot.event
 async def on_message(message, user: discord.Member = None):
-    if message.content == "lol":
+    if message.content in ["lol", "noice"]:
         if user is None:
             await message.channel.send(str(message.author.mention) + " :rofl:" + " NOICE")  # noqa
         else:
             await message.channel.send(str(user.mention) + " :rofl:" + " NOICE")  # noqa
     await bot.process_commands(message)
+
+
+@bot.event
+async def on_reaction_add(reaction, user: discord.Member = None):
+    if reaction.emoji in [":rofl:"]:
+        await reaction.channel.send("LOL")
+    pass
 
 
 @bot.command(pass_context=True)
@@ -94,4 +101,4 @@ async def getgif(ctx, *, query):
     await ctx.send(url)
 
 
-bot.run("NzY4Mzk2MjgxMDQyMTczOTcz.X4_2zQ.OXqv_Mls_731OIu3SyAwci7THe4")
+bot.run("Your Token")

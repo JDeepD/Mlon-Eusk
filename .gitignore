@@ -1,3 +1,5 @@
 mybot
 __pycache__/*
 apis/__pycache__/
+creds/
+.env
